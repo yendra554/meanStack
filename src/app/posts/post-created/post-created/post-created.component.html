@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-form-field appearance="outline">
+    <input matInput [(ngModel)]="enteredName" placeholder="Enter your name" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="enteredValue" placeholder="Enter your post description"> </textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onAddPost()">
+    Save Post
+  </button>
+</mat-card>
