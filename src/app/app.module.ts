@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { PostCreatedComponent } from './posts/post-created/post-created/post-created.component';
 import { HeaderComponent } from './header/header/header.component';
 import { PostListComponent } from './posts/post-list/post-list/post-list.component';
+import { PostsService } from './services/posts.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { PostListComponent } from './posts/post-list/post-list/post-list.compone
     MatExpansionModule
 
   ],
-  providers: [],
+  providers: [
+    PostsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
